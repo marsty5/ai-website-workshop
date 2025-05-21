@@ -53,12 +53,41 @@
       margin-bottom: 15px;
     }
 
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
+    form {
+      background: #fff9f0;
+      padding: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(255, 136, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin: 20px 0 8px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ff7a00;
+      color: white;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 25px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #e06600;
     }
 
     .about {
@@ -122,10 +151,91 @@
       <p>In this <strong>half-day workshop</strong>, you'll learn the foundations of web development, use powerful AI tools to speed things up, and walk away with a live website you built yourself. Plus, you’ll get guidance and laughs from your trainer, <strong>Maria Stylianou</strong> — a seasoned dev and educator who’s got your back every step of the way.</p>
     </section>
 
-    <section>
-      <h2 style="text-align: center;">🚀 Join the Waitlist</h2>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXcvKyb7uHiBS9BhfYU7OceL_VHb2rb3NzOAf2iuyxxP2NbQ/viewform?embedded=true" width="640" height="1495" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <section class="google-waitlist-form">
+      <form>
+        <h2 style="text-align: center;">🚀 Join the Waitlist (Google form)</h2>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" />
+
+        <label for="role">Current Role</label>
+        <input type="text" id="role" name="role" />
+
+        <label for="experience">Your Coding Experience</label>
+        <select id="experience" name="experience" required>
+          <option value="">-- Select one --</option>
+          <option>No experience at all</option>
+          <option>I’ve watched some tutorials online</option>
+          <option>I’ve built a basic website before</option>
+          <option>I studied Computer Science or a related field</option>
+          <option>I work as a developer</option>
+        </select>
+
+        <button type="submit">Yes, Let Me Know When It’s Live!</button>
+      </form>
       <p class="footnote">We’ll only use your details to notify you when the workshop goes live.</p>
+    </section>
+    <section class="waitlist-mailchimp">
+      <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+      <div id="mc_embed_signup">
+        <form action="https://qbeat.us12.list-manage.com/subscribe/post?u=a003f5f302375203174ee8c24&amp;id=f7147fff1f&amp;f_id=00cb61e9f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll"><h2>Subscribe (mailchimp)</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+                  <input type="text" name="FNAME" class="required text" id="mce-FNAME" value="" required="">
+                </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME">Last Name </label>
+                <input type="text" name="LNAME" class=" text" id="mce-LNAME" value="">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-PHONE">Phone Number <span class="asterisk">*</span></label>
+                <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-COMPANY">Company | University | School </label>
+                <input type="text" name="COMPANY" class=" text" id="mce-COMPANY" value="">
+              </div>
+              <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                  <div class="response" id="mce-success-response" style="display: none;"></div>
+              </div>
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                  /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                  <input type="text" name="b_a003f5f302375203174ee8c24_f7147fff1f" tabindex="-1" value="">
+              </div>
+              <div class="optionalParent">
+                  <div class="clear foot">
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                      <p style="margin: 0px auto;"><a href="http://eepurl.com/jfjNDE" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                  </div>
+              </div>
+            </div>
+        </form>
+      </div>
+
+      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[6]='COMPANY';ftypes[6]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+
     </section>
 
     <section class="about">
